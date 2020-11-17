@@ -16,15 +16,21 @@ public class TimeValidation {
         System.out.println("Time valid: " + timeValid);
     }
 
-
     public static boolean areHoursValid(int hours) {
         // Implement method
-        return false;
+        if (hours >= 0 && hours < 24) {
+          return true;
+        } else {
+          return false;
+        }
     }
 
 
     public static boolean areMinutesValid(int minutes) {
         // Implement method
-        return false;
+    if (minutes >= 0 && minutes < 60) {
+          return true;
+      } else {
+          return false;
+        }
     }
-}
